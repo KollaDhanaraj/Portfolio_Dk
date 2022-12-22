@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes Textlayer{
+            from {
+                font-size: 100px;
+                margin-left: 120%;
+            }
+            to {
+                font-size: 20px;
+                margin-left: 50%;
+            }
+        }
+            @keyframes ImageLayer {
+          from {
+            margin-left: 120%;
+            width: 400px;
+            height: 400px;
+            transform: rotate(360deg);
+          }
+          50% {
+            width: 600px;
+            height: 600px;
+          }
+          90% {
+            width: 300px;
+          }
+          to {
+            margin-left: 0%;
+            transform: scale(1);
+            width: 100px;
+            height: 100px;
+            transform: rotate(0deg);
+          }
+       }
+       img {
+         animation-name: ImageLayer;
+         animation-duration: 5s;
+         animation-iteration-count: 1;
+         animation-direction: circle;
+       }
+        }
+        body {
+        display: flex;
+        align-items: center;
+        height: 500px;
+        overflow: hidden;
+       }
+       h1 {
+        animation-name: TextLayer;
+        animation-duration: 5s;
+         animation-iteration-count: infinite;
+         animation-direction: alternate;
+       }
+    </style>
+   <body>
+    <div>
+        <h1>Men Clothing</h1>
+        <img src="../../public/images/a1.jpj.jpg" width="100" height="100">
+    </div>
+   </body>
+   </html>

@@ -1,0 +1,7 @@
+@for $i from 1 to 4 {
+    .box-#{$i} {
+        border: 2 px solid black;
+        margin-left:$i*100px;
+        height: 100px;
+    }
+  }

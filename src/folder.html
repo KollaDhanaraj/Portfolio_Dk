@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #UserName+div {
+         display: none;
+        }
+         #UserName:focus {
+         border:2px solid green;
+         box-shadow: 2px 2px 3px green;
+       }
+       #UserName:focus+div {
+         display: block;
+       }
+       button:disabled {
+         cursor: not-allowed;
+         background-color: gray;
+         color:white;
+       }
+       input[type="text"]:read-only {
+         background-color: lightgoldenrodyellow;
+         color:gray;
+         border:none;
+       }
+    </style>
+    <body>
+        <dl>
+            <dt>User Name</dt>
+            <dd>
+                <input type="text" id="UserName" placeholder="Name Block letters only">
+                <div>Name Block Letters Only</div>
+            </dd>
+            <dt>User Code</dt>
+            <dd><input type="text" readonly   value="USR004439"></dd>
+           
+        </dl>
+        <button disabled>Register</button>

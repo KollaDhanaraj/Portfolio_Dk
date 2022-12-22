@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Template</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header {
+            box-shadow: 2px 2px 3px gray;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color:white;
+        }
+        .brand {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Arial;
+        }
+        .menu span {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial;
+            margin-right: 20px;
+        }
+        .shortcuts span {
+            font-size: 20px;
+            font-family: Arial;
+            margin-right:10px;
+        }
+        article {
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .banner-img {
+            width: 350px;
+            height: 400px;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+        }
+        .women {
+            background-image: url("public/images a1.jpj.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .men {
+            background-image: url("images/fashion2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .kids {
+            background-image: url("images/fashion3.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button {
+            width: 160px;
+            background-color: white;
+            color:black;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 60px;
+            color:white;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
+        }
+        .highlights {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            font-family: Arial;
+            padding: 10px;
+        }
+        h4 {
+            color:red
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            Shopper.
+        </div>
+        <div class="menu">
+          <span>Home</span>
+          <span>Catalog</span>
+          <span>Shop</span>
+          <span>Blog</span>
+          <span>Pages</span>
+          <span>Docs</span>
+        </div>
+        <div class="shortcuts">
+          <span class="bi bi-search"></span>
+          <span class="bi bi-person"></span>
+          <span class="bi bi-heart"></span>
+          <span class="bi bi-cart2"></span>
+        </div>
+    </header>
+    <article>
+        <span class="bi bi-lightning-fill"> </span> <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span> <span class="bi bi-lightning-fill"></span>
+    </article>
+    <main>
+        <div class="women">
+           <div>
+            <h1>Women</h1>
+            <div class="button">Shop Women <span class="bi bi-chevron-right"></span> </div>
+           </div>
+        </div>
+        <div class="men">
+           <div>
+            <h1>Men</h1>
+            <div class="button">Shop Men <span class="bi bi-chevron-right"></span> </div>
+           </div>
+        </div>
+        <div class="kids">
+            <div>
+                <h1>Kids</h1>
+                <div class="button">Shop Kids  <span class="bi bi-chevron-right"></span></div>
+            </div>
+        </div>
+    </main>
+    <div class="highlights">
+        <div>
+          <h4> <span class="bi bi-truck"></span> FREE SHIPPING</h4>
+          <p>From all orders over $100</p>
+        </div>
+        <div>
+            <h4>FREE RETURNS</h4>
+            <p>Return money within 30 days</p>
+        </div>
+        <div>
+            <h4>SECURE SHOPPING</h4>
+            <p>You're in safe hands</p>
+        </div>
+        <div>
+            <h4>Over 10,000 Styles</h4>
+            <p>We have everything you need</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+main{
+    display: flex;
+}
+span{
+    margin-left: 10px;
+    
+}
+.exercise img{
+   margin-right: 30px;
+   width: 100px;
+   height: 100px;
+
+}
+image{
+    overflow-x:hidden;
+    border-image: round;
+    border-radius: 10px;
+}
